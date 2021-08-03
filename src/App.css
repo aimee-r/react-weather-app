@@ -34,7 +34,7 @@ form {
 }
 
 #search-city {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(253, 248, 244);
   color: rgb(19, 41, 75);
   font-weight: bolder;
   font-family: "Assistant", sans-serif;
@@ -46,11 +46,11 @@ form {
 }
 
 input {
-  border-radius: 3px;
+  border-radius: 2px;
   border: none;
-  height: 30px;
+  height: 35px;
   padding-left: 10px;
-  width: 200px;
+  width: 300px;
 }
 
 input:focus {
@@ -59,12 +59,13 @@ input:focus {
 
 #go-button {
   background-color: rgb(19, 41, 75);
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
   color: white;
   font-weight: bolder;
-  height: 30px;
-  margin-left: 5px;
+  height: 35px;
+  width: 35px;
+  margin-left: 8px;
 }
 
 #go-button:hover {
@@ -95,9 +96,10 @@ input:focus {
 /* Form end */
 
 h1 {
-  font-size: 30px;
+  font-size: 48px;
   font-weight: bold;
-  letter-spacing: 1px;
+  margin-top: 20px;
+  letter-spacing: -0.9px;
   text-shadow: 3px 8px 10px #44444428;
 }
 
@@ -112,7 +114,7 @@ h1 {
 }
 
 .main-temp {
-  padding: 20px 40px 40px 20px;
+  padding: 20px;
 }
 
 .first-temp-subtitles {
@@ -123,11 +125,10 @@ h1 {
 .first-temp {
   color: rgb(19, 41, 75);
   font-weight: bolder;
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: 54px;
   padding: 20px;
   text-shadow: 3px 8px 10px #44444428;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(19, 41, 75, 0.712);
 }
 
 #temp-change {
@@ -147,8 +148,9 @@ h1 {
 }
 
 #description {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bolder;
+  margin-left: 15px;
 }
 
 #main-icon {
@@ -158,35 +160,21 @@ h1 {
   width: 80px;
 }
 
-ul {
-  list-style-type: none;
-  margin-bottom: 0px;
-  padding: 10px 5px 10px 5px;
-  text-align: center;
+.forecast-block {
+  padding: 20px 40px 0px 40px;
 }
 
-li {
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  display: inline-block;
+.sub-time {
+  font-size: 16px;
   font-weight: bold;
-  letter-spacing: 0.5px;
-  margin: 0 5px 0 5px;
-  padding: 10px 0px 10px 0px;
-  text-align: center;
-  text-decoration: none;
+  color: rgb(255, 109, 106);
 }
 
-#sub-time {
-  font-size: 15px;
-}
-
-#sub-temp {
-  font-size: 12px;
-  font-weight: lighter;
+.sub-temp {
+  font-size: 14px;
 }
 
 .footer {
   text-align: center;
+  margin: 20px;
 }

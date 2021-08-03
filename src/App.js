@@ -1,6 +1,8 @@
 import clouds from './images/clouds.png';
 import './App.css';
 import Loader from 'react-loader-spinner';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Col, Row } from "react-bootstrap";
 
 function App() {
   return (
@@ -23,17 +25,22 @@ function App() {
                 <span id="current-day">Wednesday | 13 January</span>
             </p>
             </div>
+         
+
             <div class="main-temp">
                 
                 <div class="first-temp">
-                  <div className="mainTempBox">
-                    <div id="temp">26</div>
-                    <div id="temp-change">
+                  <Container className="d-flex justify-content-left">
+                  <Row>
+                    <Col> <div id="temp">26</div></Col>
+                    <Col><div id="temp-change">
                         <span id="celsius">°C</span> |
-                        <span id="fahrenheit">°F </span>
-                        <img id="main-icon" src={clouds} alt="Clouds" />
-                    </div>
-                    </div>
+                        <span id="fahrenheit">°F </span> </div></Col>
+                        
+
+                        <Col><img id="main-icon" src={clouds} alt="Clouds" /></Col>
+                    </Row>
+                    </Container>
                     
                     <div id="description">Cloudy</div>
                 
@@ -43,56 +50,48 @@ function App() {
             </div>
             
             
-            <ul id="weather-forecast">
+            <Container className="d-flex justify-content-center">
+              <Row>
                 
-                <li class="forecast-block">
-                <div id="sub-time">13:00</div>
-                    
-                <div id="sub-icon">
-
-                </div>
-                    
-                    <div id="sub-temp">
+                <Col className="forecast-block">
+                <div className="sub-time">13:00</div>
+                  
+                <div className="sub-icon"></div>
+                    <div className="sub-temp">
                         26°C | 14°C
                     </div>
-                </li>
+                </Col>
+
+                  <Col className="forecast-block">
+                <div className="sub-time">13:00</div>
+                  
+                <div className="sub-icon"></div>
+                    <div className="sub-temp">
+                        26°C | 14°C
+                    </div>
+                </Col>
+
+                  <Col className="forecast-block">
+                <div className="sub-time">13:00</div>
+                  
+                <div className="sub-icon"></div>
+                    <div className="sub-temp">
+                        26°C | 14°C
+                    </div>
+                </Col>
+
+                  <Col className="forecast-block">
+                <div className="sub-time">13:00</div>
+                  
+                <div className="sub-icon"></div>
+                    <div className="sub-temp">
+                        26°C | 14°C
+                    </div>
+                </Col>
                 
-                    <li class="forecast-block">
-                        <div id="sub-time">13:00</div>
-                    
-                        <div id="sub-icon">
-                    
-                        </div>
-                    
-                        <div id="sub-temp">
-                            26°C | 14°C
-                        </div>
-                    </li>
-
-                        <li class="forecast-block">
-                            <div id="sub-time">13:00</div>
-                        
-                            <div id="sub-icon">
-                        
-                            </div>
-                        
-                            <div id="sub-temp">
-                                26°C | 14°C
-                            </div>
-                        </li>
-
-                            <li class="forecast-block">
-                                <div id="sub-time">13:00</div>
-                            
-                                <div id="sub-icon">
-                            
-                                </div>
-                            
-                                <div id="sub-temp">
-                                    26°C | 14°C
-                                </div>
-                            </li>
-            </ul>
+              </Row>
+                
+            </Container>
         </div>
     
 </div>
