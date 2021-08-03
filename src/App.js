@@ -26,11 +26,13 @@ function App() {
             <div class="main-temp">
                 
                 <div class="first-temp">
+                  <div className="mainTempBox">
                     <div id="temp">26</div>
                     <div id="temp-change">
                         <span id="celsius">°C</span> |
                         <span id="fahrenheit">°F </span>
                         <img id="main-icon" src={clouds} alt="Clouds" />
+                    </div>
                     </div>
                     
                     <div id="description">Cloudy</div>
