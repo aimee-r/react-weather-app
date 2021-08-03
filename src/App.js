@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import clouds from './images/clouds.png';
 import './App.css';
 import Loader from 'react-loader-spinner';
 
@@ -30,14 +30,14 @@ function App() {
                     <div id="temp-change">
                         <span id="celsius">°C</span> |
                         <span id="fahrenheit">°F </span>
-                        <img id="main-icon" src="images/clouds.png" />
+                        <img id="main-icon" src="clouds.png" alt="Cloud" />
                     </div>
                     
                     <div id="description">Cloudy</div>
                 
-                <p class="first-temp-subtitles">
+                <div class="first-temp-subtitles">
                     Wind Speed <span id="wind">18</span>km/h | Humidity <span id="humidity">30</span>%
-                </p>
+                </div>
             </div>
             
             
@@ -92,26 +92,19 @@ function App() {
                             </li>
             </ul>
         </div>
-        
-        <p class="colour-picker">
-            Customise
-            <button class="blue"></button>
-            <button class="yellow"></button>
-            <button class="orange"></button>
-        </p>
-        <p class="footer"><a href="https://github.com/aimee-r/" target="_blank">Open-source code</a> by Aimee Rawlings
-        </p> 
     
 </div>
    
-              <Loader
+        <Loader
         type="Puff"
         color="#00BFFF"
         height={100}
         width={100}
         timeout={3000} //3 secs
       />
-  </div>
+  </div> 
+        <p class="footer"><a href="https://github.com/aimee-r/" target="_blank">Open-source code</a> by Aimee Rawlings
+        </p> 
   </div>
   );
 }
