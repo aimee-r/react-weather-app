@@ -30,7 +30,7 @@ function App() {
                     <div id="temp-change">
                         <span id="celsius">°C</span> |
                         <span id="fahrenheit">°F </span>
-                        <img id="main-icon" src="clouds.png" alt="Cloud" />
+                        <img id="main-icon" src={clouds} alt="Clouds" />
                     </div>
                     
                     <div id="description">Cloudy</div>
