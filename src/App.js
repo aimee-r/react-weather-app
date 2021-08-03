@@ -8,10 +8,10 @@ function App() {
     <div class="layer">
         
         <div class="app-bg">
+          <div className="header">
             <form id="city-form">
                 <input type="text" id="search-city" placeholder="Search your city" />
                 <button type="submit" id="go-button">GO</button>
-                <button type="submit" id="current-button"><i class="fas fa-map-marker-alt"></i></button>
             </form>
             
             <h1>
@@ -22,7 +22,7 @@ function App() {
                 <span id="current-time">15:30</span>
                 <span id="current-day">Wednesday | 13 January</span>
             </p>
-            
+            </div>
             <div class="main-temp">
                 
                 <div class="first-temp">
