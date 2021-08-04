@@ -4,6 +4,7 @@ import Icon from "./Icon";
 import Temperature from "./Temperature";
 import clouds from './images/clouds.png';
 import './Weather.css'
+import Forecast from "./Forecast";
 import axios from "axios";
 
 export default function Weather(props) {
@@ -78,6 +79,8 @@ if (weatherData.ready) {
                     Wind Speed <span id="wind">{weatherData.wind}</span>km/h | Humidity <span id="humidity">{weatherData.humidity}</span>%
                 </div>
             </div>
+
+            <Forecast coordinates={weatherData.coordinates} />
             
             
             <div className="d-flex justify-content-center">
