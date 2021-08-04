@@ -104,7 +104,7 @@ function App() {
         timeout={3000} //3 secs
       />
   </div> 
-        <p class="footer"><a href="https://github.com/aimee-r/" target="_blank">Open-source code</a> by Aimee Rawlings
+        <p class="footer"><a href="https://github.com/aimee-r/">Open-source code</a> by Aimee Rawlings
         </p> 
   </div>
   );
