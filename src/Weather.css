@@ -1,18 +1,19 @@
 .app-bg {
   border-style: solid;
   border-radius: 2px;
-  border-color: rgba(156, 156, 156, 0.438);
+  border-color: rgb(19, 41, 75);
   box-shadow: 0px 0px 2px rgba(82, 82, 82, 0.411);
-  border-width: 1px;
+  border-width: 2px;
   margin: 30px 0px auto;
   width: 60%;
+  background-color: rgb(253, 248, 244);
 }
 
 .header {
   background-color: rgb(255, 109, 106);
   padding: 24px;
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
 }
 
 /* Form Start */
@@ -151,7 +152,7 @@ input:focus {
   width: 80px;
 }
 
-/* forecast blocks */
+/* Forecast Blocks */
 
 .forecast-block {
   padding: 20px 40px 0px 40px;
