@@ -1,7 +1,8 @@
 body {
   align-content: center;
   /* background-color: rgb(250, 240, 232); */
-  background-image: url("https://images.ctfassets.net/l893v89mix1e/2X9WaLnEy421ErpvxC1uYL/e6a8ad0922d53203d508c30c92f40306/Journalling_16x9_hero-min.jpg?w=1450&h=750&q=75");
+  background-image: url("./images/weatherapp.png?w=1500");
+  background-size: 1500px;
   font-family: "Assistant", sans-serif !important;
   letter-spacing: 0.5px;
   margin: 0px auto;
