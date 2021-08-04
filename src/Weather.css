@@ -1,0 +1,172 @@
+.app-bg {
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgba(156, 156, 156, 0.438);
+  box-shadow: 0px 0px 2px rgba(82, 82, 82, 0.411);
+  border-width: 1px;
+  margin: 30px 0px auto;
+  width: 60%;
+}
+
+.header {
+  background-color: rgb(255, 109, 106);
+  padding: 24px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+/* Form Start */
+
+form {
+  font-family: "Assistant", sans-serif;
+  text-align: center;
+}
+
+#search-city {
+  background-color: rgb(253, 248, 244);
+  color: rgb(19, 41, 75);
+  font-family: "Assistant", sans-serif;
+}
+
+form {
+  align-items: center;
+  display: inline;
+}
+
+input {
+  border-radius: 2px;
+  border: none;
+  height: 35px;
+  padding-left: 10px;
+  width: 40%;
+}
+
+input:focus {
+  outline: 0;
+}
+
+#go-button {
+  background-color: rgb(19, 41, 75);
+  border-radius: 2px;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  height: 35px;
+  margin-left: 8px;
+}
+
+#go-button:hover {
+  cursor: pointer;
+}
+
+#go-button:focus {
+  outline: 0;
+}
+
+#current-button {
+  background-color: rgb(19, 41, 75);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  height: 30px;
+  margin-left: 5px;
+}
+
+#current-button:hover {
+  cursor: pointer;
+}
+
+#current-button:focus {
+  outline: 0;
+}
+
+/* Form end */
+
+.city {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-top: 20px;
+  letter-spacing: -3px;
+}
+
+#current-time {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+#current-day {
+  font-size: 20px;
+}
+
+.main-temp {
+  padding: 20px;
+}
+
+.first-temp-subtitles {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.first-temp {
+  color: rgb(19, 41, 75);
+  font-size: 54px;
+  padding: 20px;
+  text-shadow: 3px 8px 10px #44444428;
+  border-bottom: 1px solid rgba(19, 41, 75, 0.712);
+}
+
+#temp {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-top: 20px;
+  letter-spacing: -3px;
+}
+
+#temp-change {
+  font-size: 20px;
+  font-weight: lighter;
+  vertical-align: top;
+}
+
+#celsius:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#fahrenheit:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#description {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+#main-icon {
+  box-shadow: gray;
+  float: right;
+  height: 80px;
+  width: 80px;
+}
+
+/* forecast blocks */
+
+.forecast-block {
+  padding: 20px 40px 0px 40px;
+}
+
+.sub-time {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 109, 106);
+}
+
+.sub-temp {
+  font-size: 14px;
+}
+
+.sub-icon {
+  width: 50px;
+}
