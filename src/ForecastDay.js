@@ -16,23 +16,18 @@ export default function ForecastDay(props) {
     let date = new Date(props.data.dt * 1000);
     let day = date.getDay();
 
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let days = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat"];
 
     return days[day];
   }
 
   return (
-    <div>
-      <div className="WeatherForecast-day">{day()}</div>
-      <Icon description={props.data.description} size={36} />
-      <div className="WeatherForecast-temperatures">
-        <span className="WeatherForecast-temperature-max">
-          {maxTemperature()}
-        </span>
-        <span className="WeatherForecast-temperature-min">
-          {minTemperature()}
-        </span>
-      </div>
+    <div className="forecast-block">
+      <div className="sub-day">{day()}</div>
+      <div className="sub-temp">
+        <strong>{maxTemperature()}C </strong> | {minTemperature()}C
+        </div>
+        <Icon description={props.data.description}/>
     </div>
   );
 }

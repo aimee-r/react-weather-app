@@ -69,58 +69,20 @@ if (weatherData.ready) {
                     <Temperature celsius={weatherData.temperature} />
                     </div>
  
-                    <Icon defaultDescription="clear sky" description={weatherData.description} />
+                    <Icon description={weatherData.description} />
                     
                     </div>
                     
                     <div id="description" className="text-capitalize">{weatherData.description}</div>
                 
                 <div class="first-temp-subtitles">
-                    Wind Speed <span id="wind">{weatherData.wind}</span>km/h | Humidity <span id="humidity">{weatherData.humidity}</span>%
+                    Wind Speed <span id="wind">{Math.round(weatherData.wind)}</span>km/h <strong>|</strong> Humidity <span id="humidity">{weatherData.humidity}</span>%
                 </div>
             </div>
 
-            <Forecast coordinates={weatherData.coordinates} />
-            
-            
             <div className="d-flex justify-content-center">
-              <div className="row">
                 
-              <div className="col-3 forecast-block">
-                <div className="sub-time">13:00</div>
-                    <div className="sub-temp">
-                        26°C | 14°C
-                    </div>
-                    <img className="sub-icon" src={clouds} alt="Clouds" />
-                </div>
-
-                   <div className="col-3 forecast-block">
-                <div className="sub-time">13:00</div>
-                    <div className="sub-temp">
-                        26°C | 14°C
-                    </div>
-                    <img className="sub-icon" src={clouds} alt="Clouds" />
-                </div>
-
-                  <div className="col-3 forecast-block">
-                <div className="sub-time">13:00</div>
-                    <div className="sub-temp">
-                        26°C | 14°C
-                    </div>
-                    <img className="sub-icon" src={clouds} alt="Clouds" />
-                </div>
-
-                 <div className="col-3 forecast-block">
-                <div className="sub-time">13:00</div>
-                    <div className="sub-temp">
-                        26°C | 14°C
-                    </div>
-                    <img className="sub-icon" src={clouds} alt="Clouds" />
-                </div>
-
-              
-                
-              </div>
+            <Forecast coordinates={weatherData.coordinates} />
                 
             </div>
         </div>
