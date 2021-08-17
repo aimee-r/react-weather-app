@@ -16,6 +16,16 @@ export default function Icon(props) {
             <img className="main-icon" src={rain} alt="Rain" size={props.size} />
         )
     }
+       if (props.description === "light rain") {
+        return (
+            <img className="main-icon" src={rain} alt="Rain" size={props.size} />
+        )
+    }
+       if (props.description === "moderate rain") {
+        return (
+            <img className="main-icon" src={rain} alt="Rain" size={props.size} />
+        )
+    }
        if (props.description === "broken clouds") {
         return (
             <img className="main-icon" src={clouds} alt="Clouds" />
