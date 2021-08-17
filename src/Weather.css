@@ -24,7 +24,8 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 109, 106);
+  color: rgb(3, 136, 212);
+  font-weight: bold;
 }
 
 a:focus {
