@@ -93,7 +93,7 @@ if (weatherData.ready) {
 } else {
     search();
     return(
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center mt-5">
       <Loader type="TailSpin" color="#13284B" height={80} width={80} />
       </div>
     )
