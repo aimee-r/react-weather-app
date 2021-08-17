@@ -76,7 +76,7 @@ if (weatherData.ready) {
                     <div id="description" className="text-capitalize">{weatherData.description}</div>
                 
                 <div class="first-temp-subtitles">
-                    Wind Speed <span id="wind">{Math.round(weatherData.wind)}</span>km/h <strong>|</strong> Humidity <span id="humidity">{weatherData.humidity}</span>%
+                    <strong>Wind Speed </strong> {Math.round(weatherData.wind)}km/h <strong>| Humidity </strong> {Math.round(weatherData.humidity)}%
                 </div>
             </div>
 

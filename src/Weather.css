@@ -16,14 +16,19 @@
   border-top-left-radius: 1px;
   color: rgb(19, 41, 75);
 }
+
 a {
   text-decoration: none;
   color: rgb(19, 41, 75);
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a:hover {
   color: rgb(255, 109, 106);
+}
+
+a:focus {
+  font-weight: bold;
 }
 
 /* Form Start */
@@ -64,6 +69,8 @@ input:focus {
   font-weight: bolder;
   height: 35px;
   margin-left: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #go-button:hover {
@@ -121,16 +128,6 @@ input:focus {
   font-size: 20px;
   font-weight: lighter;
   vertical-align: top;
-}
-
-#celsius:hover {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#fahrenheit:hover {
-  cursor: pointer;
-  font-weight: bold;
 }
 
 #description {
