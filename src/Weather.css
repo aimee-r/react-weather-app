@@ -86,7 +86,7 @@ input:focus {
   font-size: 42px;
   font-weight: bolder;
   margin-top: 20px;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
 }
 
 #current-time {
@@ -120,7 +120,7 @@ input:focus {
   font-size: 48px;
   font-weight: bolder;
   margin-top: 20px;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
 }
 
 #temp-change {
