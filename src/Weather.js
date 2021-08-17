@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import DateFormat from "./DateFormat";
 import Icon from "./Icon";
 import Temperature from "./Temperature";
-import clouds from './images/clouds.png';
 import './Weather.css'
 import Forecast from "./Forecast";
 import axios from "axios";
+import Loader from 'react-loader-spinner';
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -92,6 +92,10 @@ if (weatherData.ready) {
   </div> )
 } else {
     search();
-    return "Loading..."
+    return(
+      <div className="d-flex justify-content-center">
+      <Loader type="TailSpin" color="#13284B" height={80} width={80} />
+      </div>
+    )
 }
 }
