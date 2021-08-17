@@ -27,7 +27,7 @@ export default function ForecastDay(props) {
       <div className="sub-temp">
         <strong>{maxTemperature()}C </strong> | {minTemperature()}C
         </div>
-        <Icon description={props.data.description}/>
+        <Icon description={props.data.weather[0].description} />
     </div>
   );
 }
